@@ -16,7 +16,19 @@ MLSP Final (use SENS to generate 3d model by 2d sketch)
 ## 🏁 快速開始
 
 ```bash
-# 複製專案
+# 下載Sketch介面化專案
 git clone https://github.com/BrianGodd/SketchGen.git
 
-# 在 Unity 中直接 Play 遊戲場景即可
+# 下載Generation Server專案
+git clone https://github.com/AlexandreBinninger/SENS.git
+
+# 將SketchGen>python中的python code複製到Server專案root資料夾中
+-api_server.py (新增)
+-run.py (覆蓋)
+-constants.py (覆蓋)
+-custom_types.py (覆蓋)
+
+# run api_server.py 開啟 gen server
+- python api_server.py
+
+# 切換至Sketch介面Unity專案，直接 Play Run 即可
